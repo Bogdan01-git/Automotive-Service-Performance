@@ -1,7 +1,9 @@
-import React from 'react';
-import { Star, Quote } from 'lucide-react';
+import React, { useState } from 'react';
+import { Star, Quote, ChevronDown, ExternalLink } from 'lucide-react';
 
 export default function Testimonials() {
+  const [showAll, setShowAll] = useState(false);
+
   const testimonials = [
     {
       name: "Brad Henning",
@@ -17,8 +19,25 @@ export default function Testimonials() {
       name: "Natallia H",
       text: "I recently had my car serviced for a lower control arm replacement, and I couldn’t be happier with the experience. The team was absolutely fantastic—super professional, efficient, and really knew their stuff. They got the job done quickly and kept me informed throughout the entire process. Plus, their pricing was very fair.",
       rating: 5
+    },
+    {
+      name: "Guadalupe Delgado",
+      text: "Installed my after market exhaust and downpipes on my Infiniti q50. Best prices out here fast and reliable for any mechanical needs. Highly recommend.",
+      rating: 5
+    },
+    {
+      name: "David S.",
+      text: "Dima and his team did an incredible job tuning my car. You can tell they actually care about what they do. My car has never felt this responsive and powerful. I won't go anywhere else for my performance upgrades.",
+      rating: 5
+    },
+    {
+      name: "Alex R.",
+      text: "Honest mechanics are hard to find, but these guys are the real deal. Brought my truck in for a weird suspension noise that two other shops couldn't figure out. Dima found it in 15 minutes and fixed it the same day for a totally reasonable price.",
+      rating: 5
     }
   ];
+
+  const visibleTestimonials = showAll ? testimonials : testimonials.slice(0, 3);
 
   return (
     <section className="py-24 bg-surfaceAcc relative">
@@ -36,8 +55,8 @@ export default function Testimonials() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((review, idx) => (
-            <div key={idx} className="bg-background p-8 rounded-xl border border-surface relative pt-12">
+          {visibleTestimonials.map((review, idx) => (
+            <div key={idx} className="bg-background p-8 rounded-xl border border-surface flex flex-col relative pt-12 animate-in fade-in zoom-in duration-300">
               <div className="absolute top-0 right-8 -translate-y-1/2 bg-primary p-3 rounded-full text-white shadow-lg">
                 <Quote className="w-5 h-5 fill-current" />
               </div>
@@ -48,7 +67,7 @@ export default function Testimonials() {
                 ))}
               </div>
               
-              <p className="text-textMuted mb-8 italic text-sm leading-relaxed">
+              <p className="text-textMuted mb-8 italic text-sm leading-relaxed flex-grow">
                 "{review.text}"
               </p>
               
@@ -61,6 +80,26 @@ export default function Testimonials() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 flex flex-col items-center justify-center gap-4">
+          {!showAll && (
+            <button 
+              onClick={() => setShowAll(true)}
+              className="flex items-center text-white bg-surface border border-surfaceAcc hover:border-primary px-6 py-3 rounded-md transition-all duration-300 font-semibold text-sm tracking-wider"
+            >
+              READ MORE REVIEWS <ChevronDown className="ml-2 w-4 h-4" />
+            </button>
+          )}
+          
+          <a 
+            href="https://maps.app.goo.gl/F9a7G3Hyv7t41tjb8?g_st=ic" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center text-primary hover:text-white transition-colors text-sm font-semibold tracking-wider mt-4"
+          >
+            VIEW ALL REVIEWS ON GOOGLE MAPS <ExternalLink className="ml-2 w-4 h-4" />
+          </a>
         </div>
       </div>
     </section>
