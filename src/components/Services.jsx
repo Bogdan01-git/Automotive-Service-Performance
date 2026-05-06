@@ -31,6 +31,13 @@ export default function Services() {
           </p>
         </div>
 
+        <div className="mb-16 rounded-2xl overflow-hidden shadow-2xl border border-surfaceAcc relative group h-[300px] sm:h-[500px]">
+          <video autoPlay loop muted playsInline className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <source src="/1.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500"></div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, idx) => (
             <div key={idx} className="glass-panel p-8 rounded-xl transition-all duration-300 hover:border-primary/50 hover:-translate-y-1">
