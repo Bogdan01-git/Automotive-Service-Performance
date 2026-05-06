@@ -125,7 +125,7 @@ export default function Contact() {
           {/* Contact Details & Info */}
           <div className="lg:pl-12 flex flex-col gap-8">
             <div className="rounded-xl overflow-hidden h-48 sm:h-64 shadow-xl border border-surfaceAcc relative group">
-              <img src="/5.jpg" alt="Dima Automotive Shop" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <img src="/5.webp" alt="Dima Automotive Shop" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
             </div>
 

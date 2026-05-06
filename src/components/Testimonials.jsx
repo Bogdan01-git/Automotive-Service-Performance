@@ -44,7 +44,7 @@ export default function Testimonials() {
         </div>
 
         <div className="mb-16 rounded-2xl overflow-hidden shadow-2xl border border-surfaceAcc relative group max-w-4xl mx-auto h-[300px] sm:h-[400px]">
-          <img src="/3.jpg" alt="Diagnostics" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <img src="/3.webp" alt="Diagnostics" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent group-hover:from-black/80 transition-colors duration-500"></div>
           
           <div className="absolute inset-0 flex flex-col justify-center p-8 sm:p-12 z-10">

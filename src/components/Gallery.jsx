@@ -6,7 +6,7 @@ export default function Gallery() {
     { type: 'video', src: '/2.mp4' },
     { type: 'video', src: '/3.mp4' },
     { type: 'video', src: '/4.mp4' },
-    { type: 'image', src: '/5.jpg' }
+    { type: 'image', src: '/5.webp' }
   ];
 
   return (

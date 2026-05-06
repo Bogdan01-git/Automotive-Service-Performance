@@ -29,7 +29,7 @@ export default function Hero() {
       <nav className="relative z-20 container mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-center border-b border-white/10">
         {/* Logo Area */}
         <div className="flex items-center mb-4 sm:mb-0 group cursor-pointer mix-blend-screen">
-          <img src="/logo.png" alt="Dima Automotive LLC" className="h-16 md:h-20 w-auto max-w-[280px] object-contain transition-transform duration-500 group-hover:scale-105" style={{ mixBlendMode: 'screen' }} />
+          <img src="/logo.webp" alt="Dima Automotive LLC" className="h-16 md:h-20 w-auto max-w-[280px] object-contain transition-transform duration-500 group-hover:scale-105" style={{ mixBlendMode: 'screen' }} />
         </div>
 
         {/* Links */}

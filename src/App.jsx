@@ -1,18 +1,17 @@
 import React from 'react';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import Features from './components/Features';
-import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import ServicePageTemplate from './pages/ServicePageTemplate';
 
 function App() {
   return (
-    <div className="font-sans bg-background text-textMain min-h-screen">
-      <Hero />
-      <Services />
-      <Features />
-      <Testimonials />
-      <Contact />
+    <div className="font-sans bg-background text-textMain min-h-screen flex flex-col">
+      <div className="flex-grow">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/services/:serviceId" element={<ServicePageTemplate />} />
+        </Routes>
+      </div>
       
       {/* Footer with SEO Tags */}
       <footer className="bg-[#050505] py-8 text-center border-t border-surfaceAcc text-textMuted text-sm">

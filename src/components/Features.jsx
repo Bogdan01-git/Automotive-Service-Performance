@@ -45,7 +45,7 @@ export default function Features() {
         </div>
 
         <div className="mt-20 rounded-2xl overflow-hidden shadow-2xl border border-surfaceAcc relative group h-[300px] sm:h-[450px]">
-          <img src="/features.jpg" alt="Professional Auto Repair" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <img src="/features.webp" alt="Professional Auto Repair" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500"></div>
         </div>
       </div>
