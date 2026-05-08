@@ -69,7 +69,7 @@ export default function Hero() {
             Performance Auto Repair & Custom Builds
           </h2>
 
-          <a href="https://maps.app.goo.gl/F9a7G3Hyv7t41tjb8?g_st=ic" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-white bg-white/5 border border-white/10 hover:border-[#ff3333]/50 hover:bg-white/10 px-3 min-[400px]:px-4 py-2 sm:py-2.5 rounded-full transition-all duration-300 mb-8 text-[11px] min-[400px]:text-sm md:text-base font-semibold group backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.3)] w-fit max-w-full">
+          <a href="https://www.google.com/maps/place/2379+Hendersonville+Rd,+Arden,+NC+28704/@35.463229,-82.515307,17z/data=!3m1!4b1!4m6!3m5!1s0x8859ec54e5c440d1:0x774b1efbd29a26db!8m2!3d35.463229!4d-82.515307" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-white bg-white/5 border border-white/10 hover:border-[#ff3333]/50 hover:bg-white/10 px-3 min-[400px]:px-4 py-2 sm:py-2.5 rounded-full transition-all duration-300 mb-8 text-[11px] min-[400px]:text-sm md:text-base font-semibold group backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.3)] w-fit max-w-full">
             <MapPin className="w-3.5 h-3.5 min-[400px]:w-4 min-[400px]:h-4 sm:w-5 sm:h-5 mr-1.5 sm:mr-2 text-[#ff3333] group-hover:scale-110 transition-transform shrink-0" />
             <span className="truncate sm:whitespace-normal">2379 Hendersonville Rd, Arden, NC 28704</span>
           </a>
