@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Check, Star, Wrench, Zap, Flag } from 'lucide-react';
+import { Phone, Check, Star, Wrench, Zap, Flag, MapPin } from 'lucide-react';
 
 const FacebookIcon = ({ className }) => (
   <svg className={className} fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -65,9 +65,14 @@ export default function Hero() {
             <span className="sr-only"> - Auto Repair & Performance Shop in Arden & Asheville, NC</span>
           </h1>
 
-          <h2 className="text-xl md:text-2xl font-semibold text-white mb-2">
+          <h2 className="text-xl md:text-2xl font-semibold text-white mb-4">
             Performance Auto Repair & Custom Builds
           </h2>
+
+          <a href="https://maps.app.goo.gl/F9a7G3Hyv7t41tjb8?g_st=ic" target="_blank" rel="noopener noreferrer" className="inline-flex items-start sm:items-center text-white bg-white/5 border border-white/10 hover:border-[#ff3333]/50 hover:bg-white/10 px-4 py-2.5 rounded-full transition-all duration-300 mb-8 text-sm md:text-base font-semibold group backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.3)] w-fit">
+            <MapPin className="w-5 h-5 mr-2 mt-0.5 sm:mt-0 text-[#ff3333] group-hover:scale-110 transition-transform shrink-0" />
+            2379 Hendersonville Rd, Arden, NC 28704
+          </a>
 
           <p className="text-gray-400 mb-8 max-w-lg">
             Dealership Quality Repairs Without Dealership Prices
