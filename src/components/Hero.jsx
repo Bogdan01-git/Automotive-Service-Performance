@@ -58,20 +58,20 @@ export default function Hero() {
       <div className="relative z-10 flex-grow container mx-auto px-6 flex flex-col justify-center pt-16 pb-32">
         <div className="max-w-2xl text-left">
 
-          <h1 className="text-[13vw] leading-[1.1] min-[500px]:text-6xl md:text-7xl font-bold text-white mb-2 tracking-tight break-words" style={{ fontFamily: 'sans-serif', fontWeight: 900 }}>
+          <h1 className="text-[11.5vw] leading-[1.1] min-[400px]:text-5xl min-[500px]:text-6xl md:text-7xl font-bold text-white mb-2 tracking-tight" style={{ fontFamily: 'sans-serif', fontWeight: 900 }}>
             DIMA
             <br />
             AUTOMOTIVE
             <span className="sr-only"> - Auto Repair & Performance Shop in Arden & Asheville, NC</span>
           </h1>
 
-          <h2 className="text-xl md:text-2xl font-semibold text-white mb-4">
+          <h2 className="text-lg min-[400px]:text-xl md:text-2xl font-semibold text-white mb-4">
             Performance Auto Repair & Custom Builds
           </h2>
 
-          <a href="https://maps.app.goo.gl/F9a7G3Hyv7t41tjb8?g_st=ic" target="_blank" rel="noopener noreferrer" className="inline-flex items-start sm:items-center text-white bg-white/5 border border-white/10 hover:border-[#ff3333]/50 hover:bg-white/10 px-4 py-2.5 rounded-full transition-all duration-300 mb-8 text-sm md:text-base font-semibold group backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.3)] w-fit">
-            <MapPin className="w-5 h-5 mr-2 mt-0.5 sm:mt-0 text-[#ff3333] group-hover:scale-110 transition-transform shrink-0" />
-            2379 Hendersonville Rd, Arden, NC 28704
+          <a href="https://maps.app.goo.gl/F9a7G3Hyv7t41tjb8?g_st=ic" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-white bg-white/5 border border-white/10 hover:border-[#ff3333]/50 hover:bg-white/10 px-3 min-[400px]:px-4 py-2 sm:py-2.5 rounded-full transition-all duration-300 mb-8 text-[11px] min-[400px]:text-sm md:text-base font-semibold group backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.3)] w-fit max-w-full">
+            <MapPin className="w-3.5 h-3.5 min-[400px]:w-4 min-[400px]:h-4 sm:w-5 sm:h-5 mr-1.5 sm:mr-2 text-[#ff3333] group-hover:scale-110 transition-transform shrink-0" />
+            <span className="truncate sm:whitespace-normal">2379 Hendersonville Rd, Arden, NC 28704</span>
           </a>
 
           <p className="text-gray-400 mb-8 max-w-lg">
