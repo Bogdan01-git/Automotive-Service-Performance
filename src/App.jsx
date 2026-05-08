@@ -13,17 +13,25 @@ function App() {
         </Routes>
       </div>
       {/* Google Maps Location */}
-      <div className="w-full h-[350px] sm:h-[450px] border-t border-surfaceAcc">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3248.825656114849!2d-82.5186063!3d35.4831627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8859f518aeb5db57%3A0xc3b83b3e8cbb624!2s2379%20Hendersonville%20Rd%2C%20Arden%2C%20NC%2028704!5e0!3m2!1sen!2sus!4v1715103400000!5m2!1sen!2sus"
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Dima Automotive Location"
-        ></iframe>
+      <div className="bg-background pt-12 pb-8 border-t border-surfaceAcc">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="mb-6 text-center">
+            <h3 className="text-2xl font-bold text-textMain mb-2">Find Us Here</h3>
+            <p className="text-textMuted">2379 Hendersonville Rd, Arden, NC 28704</p>
+          </div>
+          <div className="w-full h-[350px] sm:h-[450px] rounded-2xl overflow-hidden shadow-2xl border border-surfaceAcc">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3248.825656114849!2d-82.5186063!3d35.4831627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8859f518aeb5db57%3A0xc3b83b3e8cbb624!2s2379%20Hendersonville%20Rd%2C%20Arden%2C%20NC%2028704!5e0!3m2!1sen!2sus!4v1715103400000!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) brightness(95%) contrast(105%)' }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Dima Automotive Location"
+            ></iframe>
+          </div>
+        </div>
       </div>
       
       {/* Footer with SEO Tags */}
