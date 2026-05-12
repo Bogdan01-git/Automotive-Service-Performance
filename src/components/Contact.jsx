@@ -161,7 +161,7 @@ export default function Contact() {
                   <MapPin className="w-6 h-6 text-primary mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h5 className="font-semibold text-textMain text-lg mb-1">Location</h5>
-                    <a href="https://www.google.com/maps/place/2379+Hendersonville+Rd,+Arden,+NC+28704/@35.463229,-82.515307,17z/data=!3m1!4b1!4m6!3m5!1s0x8859ec54e5c440d1:0x774b1efbd29a26db!8m2!3d35.463229!4d-82.515307" target="_blank" rel="noopener noreferrer" className="text-textMuted text-lg hover:text-primary transition-colors block">
+                    <a href="https://maps.app.goo.gl/F9a7G3Hyv7t41tjb8?g_st=ic" target="_blank" rel="noopener noreferrer" className="text-textMuted text-lg hover:text-primary transition-colors block">
                       2379 Hendersonville Rd<br/>Arden, NC 28704
                     </a>
                   </div>
@@ -195,9 +195,9 @@ export default function Contact() {
             </div>
 
             {/* Google Map Embedded Block */}
-            <div className="rounded-xl overflow-hidden h-64 sm:h-80 shadow-xl border border-surfaceAcc">
+            <div className="rounded-xl overflow-hidden h-64 sm:h-80 lg:h-[420px] shadow-xl border border-surfaceAcc">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3251.365313904576!2d-82.5178819!3d35.463229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8859ec54e5c440d1%3A0x774b1efbd29a26db!2sDIMA%20AUTOMOTIVE%20SHOP!5e0!3m2!1sen!2sus!4v1715000000000!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3248.825656114849!2d-82.5186063!3d35.4831627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8859f518aeb5db57%3A0xc3b83b3e8cbb624!2s2379%20Hendersonville%20Rd%2C%20Arden%2C%20NC%2028704!5e0!3m2!1sen!2sus!4v1715103400000!5m2!1sen!2sus"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) brightness(95%) contrast(105%)' }}
