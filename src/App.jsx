@@ -1,11 +1,13 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import HomePage from './pages/HomePage';
 import ServicePageTemplate from './pages/ServicePageTemplate';
 
 function App() {
   return (
     <div className="font-sans bg-background text-textMain min-h-screen flex flex-col">
+      <Analytics />
       <div className="flex-grow">
         <Routes>
           <Route path="/" element={<HomePage />} />
